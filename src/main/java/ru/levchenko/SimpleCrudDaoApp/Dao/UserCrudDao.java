@@ -6,7 +6,7 @@ import ru.levchenko.SimpleCrudDaoApp.models.UserRoles;
 import java.util.List;
 
 public interface UserCrudDao extends CrudDao<User> {
-    List<UserRoles> roles(Long id);
+    List<UserRoles> roles(long id);
 
     List<User> findUsersByRole(String role);
 }

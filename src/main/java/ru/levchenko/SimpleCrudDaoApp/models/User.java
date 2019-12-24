@@ -9,7 +9,7 @@ public class User {
     private String password;
     private List<UserRoles> roles = new ArrayList<>();
 
-    public User(Long id, String name, String password, List<UserRoles> roles) {
+    public User(long id, String name, String password, List<UserRoles> roles) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -23,7 +23,7 @@ public class User {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

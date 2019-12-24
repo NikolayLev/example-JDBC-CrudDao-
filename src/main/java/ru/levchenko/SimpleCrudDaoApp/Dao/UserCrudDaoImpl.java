@@ -48,7 +48,7 @@ public final class UserCrudDaoImpl implements UserCrudDao {
 
 
     @Override
-    public List<UserRoles> roles(Long id) {
+    public List<UserRoles> roles(long id) {
         return find(id).orElse(new User()).getRoles();
     }
 
@@ -94,7 +94,7 @@ public final class UserCrudDaoImpl implements UserCrudDao {
     }
 
     @Override
-    public Optional<User> find(Long id) {
+    public Optional<User> find(long id) {
         PreparedStatement preparedStatement = null;
         User user = new User();
         try {
@@ -173,7 +173,7 @@ public final class UserCrudDaoImpl implements UserCrudDao {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(long id) {
         PreparedStatement preparedStatement = null;
 
         try {
